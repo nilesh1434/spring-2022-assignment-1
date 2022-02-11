@@ -11,7 +11,7 @@ There are five tasks, and you are free to use the skeleton code provided. The co
 
 File `utils.js` contains some useful functions to create [shaders](https://developer.mozilla.org/en-US/docs/Web/API/WebGLShader), [programs](https://developer.mozilla.org/en-US/docs/Web/API/WebGLProgram), [buffers](https://developer.mozilla.org/en-US/docs/Web/API/WebGLBuffer), [VAOs](https://developer.mozilla.org/en-US/docs/Web/API/WebGLVertexArrayObject), as well as [matrix operations](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Matrix_math_for_the_web), [projections](http://www.songho.ca/opengl/gl_projectionmatrix.html), and [lookat](https://www.khronos.org/registry/OpenGL-Refpages/gl2.1/xhtml/gluLookAt.xml).
 
-Here is an example of assignment 1:
+Here is an example of assignment 1 (however, pay attention that the rotation and zoom functionalities should be implemented through mouse movements):
 ![Assignment 1 example](assignment-1.gif)
 
 ### Tasks
