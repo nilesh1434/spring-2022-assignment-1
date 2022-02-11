@@ -24,15 +24,15 @@ Create a configuration panel with four components:
 #### Task 2
 Create functionalities to handle mouse input. In other words, as the user clicks and moves the mouse around the canvas, you should handle the appropriate events (see [here](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent)) and update two variables: one storing the horizontal mouse movement and another one storing the vertical mouse movement. Ensure that both variables are constrained to the ranges: 0-360, and 1-100. Even before drawing anything, ensure you have implemented this functionality correctly.
 
-#### Task 2
+#### Task 3
 Connect the file input element to the `window.handleFile` function so that every time a JSON file is uploaded by the user, `window.handleFile` is called. You should also complete the `window.handleFile` function so that it properly parses the JSON file, and adds the appropriate layer to the layers dictionary. In order to handle layers, you should implement the `init` and `draw` functions in `Layer` and `BuildingLayer`.
 
-#### Task 3
+#### Task 4
 You should implement a view transformation matrix inside `updateViewMatrix` in such a way that when the user drags the mouse (see Task 2), the camera rotates around the centerpoint of the layers. The initial position of the camera should be similar to the image below:
 
 ![Assignment 1 example](initial.png)
 
-#### Task 4
+#### Task 5
 You should implement two types of projections (orthographic and perspective). This should be handled by function `updateProjectionMatrix`. Notice that even in an orthographic projection you should be able to zoom-in and zoom-out towards the centerpoint of the model (computed inside `getCentroid`).
 
 <p align="center">
@@ -85,4 +85,4 @@ The delivery of the assignments will be done using GitHub Classes. It will not b
 ### Grading
 The code will be evaluated on Firefox. Your submission will be graded according to the quality of the image results, interactions, and correctness of the implemented algorithms. Your README.me file will also be graded. 
 
-To get a C on the assignment, your application should be able to load a JSON file in the format specified above, and visualize at least one layer using a perspective projection. To get a B on the assignment, your application should visualize at least two layers using both a perspective projection as well as an orthographic projection. On top of that, the application should implement the zoom interaction specified in the configuration panel. To get an A on the assignment, the application must shade the buildings according to their normals, visualize all four layers, consider the rotation interaction, and have a detailed readme file.
+To get a C on the assignment, your application should be able to load a JSON file in the format specified above, and visualize at least one layer using a perspective projection. To get a B on the assignment, your application should visualize at least two layers using both a perspective projection as well as an orthographic projection. On top of that, the application should implement the zoom interaction. To get an A on the assignment, the application must shade the buildings according to their normals, visualize all four layers, consider the rotation interaction, and have a detailed readme file.
