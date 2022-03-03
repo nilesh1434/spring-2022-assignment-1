@@ -39,19 +39,39 @@
         <table>
             <tr>
                 <td>Rotate</td>
-                <td><!--TODO: rotate slider--></td>
+                <td><div>
+                    <input type="range" id="rotate" name="rotate"
+                           min="0" max="360">
+                    <label for="rotate"></label>
+                  </div></td>
             </tr>
             <tr>
                 <td>Zoom</td>
-                <td><!--TODO: zoom slider--></td>
+                <td><div>
+                    <input type="range" id="zoom" name="zoom"
+                           min="0" max="100">
+                    <label for="zoom"></label>
+                  </div></td>
             </tr>
             <tr>
                 <td>Projection</td>
-                <td><!--TODO: dropdown menu element--></td>
+                <td><label for="projection"></label>
+
+                    <select id="projection">
+                        <option value="Perspective">Perspective</option>
+                        <option value="Orthographic">Orthographic</option>
+                    </select></td>
             </tr>
             <tr>
                 <td>Layers</td>
-                <td><!--TODO: input element--></td>
+                <td><label for="layers"></label>
+
+                    <input type="file"
+                           id="layers" name="layers"
+                           accept="image/png, image/jpeg">
+                           <div>
+                            <button>Submit</button>
+                          </div></td>
             </tr>
         </table>
     </div>
